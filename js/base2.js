@@ -11,7 +11,7 @@ window.onload=function(){
 	
 
     $("#btnLoadJSON").click(function(){
-        $("#resultDadosJSON").load("./data/UFAL_CEDU-TCC_JulianaNeves2017-PreTeste.json", function(responseTxt, statusTxt, xhr){
+        $("#resultDadosJSON").load("./data/preTeste_todosAlunos.json", function(responseTxt, statusTxt, xhr){
             if(statusTxt == "success")
                 alert("External content loaded successfully!");
             if(statusTxt == "error")
