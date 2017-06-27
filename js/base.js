@@ -14,33 +14,22 @@ window.onload=function(){
 
     $("#wordsDistancesTbl").empty(); // Limpa o panel para 
 
+// ==============================================================================================
+// ------------------------ VARIAVEIS PRINCIPAIS ------------------------------------------------
+// ===============================================================================================
+    // Separa os dados da resposta do JSON em duas Arrays: cabecalho e respostas -- -- -- -- -- --
+    var cabecalhoDados = Array(); // Array que recebera o cabecalho dos dados
+    var respostasDados = Array(); // Array que recebera os resultados dos dados   
+    var distEntrePalavras = Array(); // Array que recebera o resultado da analise de distancia entre as palavras
+// -----------------------------------------------------------------------------------------------
     // Recebe o a fonte de dados (JSON)
-    var dataSource = $("#dataSource  option:selected").val();
-    var JSONdataSource;
-    var tipoAnalise;
-    // -----------------------------------------------------------------------------------
-    // Recuper criterio para analise de distancia
-    var outputType = $("#tipoAnalise  option:selected").val();
-
-        if(dataSource == "semRepOp"){
-            tipoAnalise = "semRepOp";
-        }else if(dataSource == "comRepOp"){
-            tipoAnalise = "comRepOp";
-        } else{
-             tipoAnalise = "semRepOp";
-        }       
-
-
+    var JSONdataSource = $("#dataSource  option:selected").val();
+    // Recuper criterio para analise de distancia ---   ---   ---   ---   ---   ---   ---  ---   --
+    var tipoAnalise = $("#tipoAnalise  option:selected").val();    
     // Recupera tipo de retorno (return) ---   ---   ---   ---   ---   ---   ---  ---   --
     var outputType = $("#outputType  option:selected").val();
-
-        if(dataSource == "todosAlunos"){
-            JSONdataSource = "preTeste_todosAlunos";
-        }else if(dataSource == "alunoA"){
-            JSONdataSource = "sondas_aluno-A";
-        } else{
-             JSONdataSource = "preTeste_todosAlunos";
-        }            
+// ===============================================================================================
+          
     // FIM - Recupera tipo de retorno (return) ---   ---   ---   ---   ---   ---   ---  --
     // -----------------------------------------------------------------------------------
 
@@ -51,47 +40,39 @@ window.onload=function(){
                 alert("Error: " + xhr.status + ": " + xhr.statusText);
 
             var arrayWordsToCompare = JSON.parse(responseTxt) // Tranforma em Objeto o texto no formato JSON
-            console.log("Objeto do JSON (raw): ", arrayWordsToCompare)
+// -----------------------------------------------------------------------------------------------------------
 
-                var dataProbe = Array();
-                var cabecalhoDados = Array();
-                var respostasDados = Array();
-
-                switch(dataSource){
+                switch(JSONdataSource){
 
                     // Caso o JSON dos dados seja de todos os alunos (linha == aluno & coluna == palavra)
-                    case "todosAlunos":
-                        var tempVar = trataJSONtoArray(arrayWordsToCompare ,dataSource)
+                    case "preTeste_todosAlunos":
+                        var tempVar = TrataJSONtoArray(arrayWordsToCompare ,JSONdataSource)
                         cabecalhoDados = tempVar[0];
                         respostasDados = tempVar[1];
                     break;
 
                     // Caso o JSON dos dados seja de um aluno especifico (linha == palvra & coluna == sonda )
                     // --> ARTENCAO: O retorno do
-                    case "alunoA":
-                    arrayWordsToCompare.forEach(function(item, index, arr){
-                        if(index == 0){
-                            arr[index][0] = item.Modelo;
-                            console.log("Cabecalho Coluna Modelo: ", arr[index][0][0]);
-                        }else{
-                            $.each(item, function(index2, value) {
-                                arr[index][index2] = value;
-                                console.log("Sonda["+index+"]["+index2+"]: ",value);
-                            });
-                        }
-                        
-                    });
+                    case "sondas_aluno-A":
+                        var tempVar = TrataJSONtoArray(arrayWordsToCompare ,JSONdataSource)
+                        cabecalhoDados = tempVar[0];
+                        respostasDados = tempVar[1];
                     break;
 
                     default:
                     arrayWordsToCompare = arrayWordsToCompare.data;
 
-                } // END - switch(dataSource)
-            console.log("Objetco de Todos os Alunos: ", arrayWordsToCompare.data);
+                } // END - switch(JSONdataSource)
+                // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
             console.log("Array Palavras Modelo: ", cabecalhoDados);            
             console.log("Array Respostas do aluno: ", respostasDados);
 
-            
+            // Recebe a distancia entre a palavra modelo e a resposta de cada valor 
+            distEntrePalavras = DefineParametrosAnalise(cabecalhoDados, respostasDados, tipoAnalise, outputType)
+
+ // ---------------------------------------------------------------------------------------------------------------           
+            // FORMATA OD DADOS DOS ARRAYS CABECALHO E RESPOSTAS PARA O FORMATO DE SAIDA --------------------------
             // Avalia o primeiro indice do Array (cada aluno?)
             var firstIndexSize = arrayWordsToCompare.length; // Tamanho do Array
             var resultadoArray = Array(); // Gaurda todos os valores do resultado que sera retornado
@@ -100,12 +81,14 @@ window.onload=function(){
             var distanciaCalculada; // A distancia Damerau-Levenshtein entre as duas strings
 
             respostasDados.forEach(function(respostaAluno, indexCount){
+                
                 resultadoArray[indexCount] = Array();
+                
                 respostaAluno.forEach(function(palavraResp, indexCount2){
+                    
                     if(indexCount2 == 0){
                         var nomeAluno = palavraResp;
                         resultadoArray[indexCount][0] = nomeAluno;
-                        console.log(nomeAluno);
                     } else{
 
                         palavraModeloAtual = cabecalhoDados[indexCount2];
