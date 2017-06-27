@@ -1,0 +1,289 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dist",
+				"distancia"
+			],
+			[
+				"pala",
+				"palavraModeloAtual"
+			],
+			[
+				"in",
+				"indexCount2"
+			],
+			[
+				"pla",
+				"palavrasModelo"
+			],
+			[
+				"valor",
+				"valorResposta2"
+			],
+			[
+				"item",
+				"itemCount2"
+			],
+			[
+				"res",
+				"respostasAluno"
+			],
+			[
+				"index",
+				"index2"
+			],
+			[
+				"data",
+				"dataSource"
+			],
+			[
+				"json",
+				"json"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"word",
+				"WordDistanceHTML"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 448.0
+	},
+	"console":
+	{
+		"height": 89.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/U/dev/apps/compareWords",
+		"/U/dev/apps/howSimilar2"
+	],
+	"file_history":
+	[
+		"/U/dev/apps/howSimilar/js/damerau-levenshtein.js",
+		"/U/dev/apps/howSimilar/index.html",
+		"/U/dev/apps/howSimilar/js/base2.js",
+		"/U/_ ORIENTAÇÕES/TCCs/2017 - Juliana Neves (Pedagogia)/Dados/UFAL, TCC - Juliana Neves (2017) - Sondas (Aluno A).csv",
+		"/U/dev/apps/howSimilar/data/sondas_aluno-A",
+		"/U/dev/apps/howSimilar/css/jquery.jspanel.css",
+		"/U/dev/apps/howSimilar/js/float-panel/float-panel.js",
+		"/U/dev/apps/compareWords/index.php",
+		"/U/dev/apps/howSimilar/libs/funcoes.php",
+		"/U/dev/apps/howSimilar/header.php",
+		"/U/dev/apps/howSimilar/js/dl_distance_exe.js",
+		"/U/dev/apps/compareWords/CHANGELOG.txt",
+		"/U/dev/apps/compareWords/js/base.js",
+		"/U/dev/apps/compareWords/levenshtein.php",
+		"/U/dev/apps/compareWords/header.php",
+		"/U/dev/apps/compareWords/libs/funcoes.php",
+		"/U/dev/bin/php/php.ini",
+		"/U/dev/apps/compareWords/lib/funcoes.php",
+		"/U/dev/apps/compareWords/footer.php",
+		"/U/dev/apps/compareWords/css/principal.css",
+		"/U/dev/apps/compareWords/manifest.json",
+		"/U/dev/apps/compareWords/css/principal.php",
+		"/U/dev/apps/compareWords/compareWords.sublime-workspace",
+		"/U/dev/apps/compareWords/compareWords.sublime-project",
+		"/U/dev/apps/compareWords/lib/funcoes",
+		"/U/dev/bin/php/php.ini-development",
+		"/U/dev/bin/php/php.ini-production",
+		"/C/dev/apps/AutismRegM/src/app/app.html",
+		"/C/dev/apps/AutismRegM/src/components/lista-bd/lista-bd.html",
+		"/C/dev/apps/AutismRegM/src/components/lista-bd/lista-bd.ts",
+		"/C/dev/apps/AutismRegM/src/pages/home/home.html",
+		"/C/dev/apps/AutismRegM/src/pages/home/home.ts",
+		"/C/dev/apps/AutismRegM/src/pages/cliente-novo/cliente-novo.ts",
+		"/C/dev/apps/AutismRegM/src/app/app.component.ts",
+		"/C/dev/apps/AutismRegM/src/app/app.module.ts",
+		"/C/dev/apps/AutismRegM/src/pages/cliente-novo/cliente-novo.html",
+		"/C/dev/apps/AutismRegM/src/components/lista-bd/lista-bd.module.ts",
+		"/C/dev/apps/AutismRegM/src/index.html",
+		"/C/dev/apps/mySuperApp/src/pages/list-master/list-master.ts",
+		"/C/dev/apps/mySuperApp/src/pages/list-master/list-master.html",
+		"/C/dev/apps/autismReg/src/pages/list-programs/list-program.html",
+		"/C/dev/apps/autismReg/www/index.html",
+		"/C/dev/apps/autismReg/src/pages/pages.ts",
+		"/C/dev/apps/autismReg/src/app/app.module.ts",
+		"/C/dev/apps/autismReg/src/app/app.component.ts",
+		"/C/dev/apps/autismReg/src/pages/list-programs/list-program.ts",
+		"/C/dev/apps/autismReg/src/pages/list-programs/list-program.scss",
+		"/C/dev/apps/autismReg/src/pages/list-master/README.md",
+		"/C/dev/apps/autismReg/ionic.config.json",
+		"/U/_ UFAL - Projetos Pesquisa/autismreg/index.html",
+		"/U/_ UFAL - Projetos Pesquisa/autismreg/dados_pacientes.js",
+		"/U/UFAL - Disciplinas/Desenvolvimento e Aprendizagem/Aulas/Aula 10 - Psicologia Genética (Piaget), Parte 02/Piaget (1964) Development and learning - ANOTAÇÔES",
+		"/U/UFAL - Disciplinas/Desenvolvimento e Aprendizagem/Aulas/Skinner/UFAL, CEDU - Evolução e Aprendizagem -- Skinner (Marques, 2016-2).txt",
+		"/C/Apps/xampp/webdav/siepsi2/topo.php",
+		"/L/Docência/FAMAM/Alfabetização e Letramento/Bibliografia/Reflexões sobre Alfabetização - Emilia Ferreiro (TV CCP - YouTube).srt",
+		"/C/Apps/EasyPHP1-8/www/siepsi2/cadastra_questoes.php",
+		"/C/Apps/xampp/webdav/siepsi2/ajax/login_request.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"include_path=",
+			"C:\\WINDOWS",
+			"path",
+			"ListMasterPage",
+			"list-master"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ListProgramPage",
+			"list-program"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "howSimilar2.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -6,7 +6,9 @@
   <script type="text/javascript" src="js/jquery.js"></script>
    <script type="text/javascript" src="js/jsPanel/jquery.jspanel-compiled.js"></script>
   <script type="text/javascript" src="js/damerau-levenshtein.js"></script>
-  <script type="text/javascript" src="js/base2.js"></script>
+  <script type="text/javascript" src="js/defineParametrosAnalise.js"></script>
+  <script type="text/javascript" src="js/trataDados.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
   
   <link rel="stylesheet" type="text/css" href="css/result-light.css">
   <link rel="stylesheet" type="text/css" href="js/jsPanel/jquery.jspanel.min.css">
@@ -32,6 +34,14 @@ Compare two words distance (Damerau-Levenshtein)
 <p><span id="wordsDistances"><h4>Escolha o formato do resultado (output)</h4></span></p>
 
 <p>
+<select id ="tipoAnalise">
+  <option value="semRepOp">Sem repetição de operação</option>
+  <option value="comRepOp">Com repetição de operação</option>
+</select>
+<select id ="dataSource">
+  <option value="todosAlunos">Todos os alunos</option>
+  <option value="alunoA">Aluno(a) A</option>
+</select>
 <select id ="outputType">
   <option value="htmlTable">Tabela HTML</option>
   <option value="textList">Lista de texto</option>
