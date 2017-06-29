@@ -6,9 +6,9 @@
   <script type="text/javascript" src="js/jquery.js"></script>
    <script type="text/javascript" src="js/jsPanel/jquery.jspanel-compiled.js"></script>
   <script type="text/javascript" src="js/damerau-levenshtein.js"></script>
-  <script type="text/javascript" src="js/defineParametrosAnalise.js"></script>
   <script type="text/javascript" src="js/trataDados.js"></script>
   <script type="text/javascript" src="js/DiferencaEntrePalavras.js"></script>
+  <script type="text/javascript" src="js/DefineParametrosAnalise.js"></script>  
   <script type="text/javascript" src="js/base.js"></script>
   
   <link rel="stylesheet" type="text/css" href="css/result-light.css">
@@ -20,15 +20,16 @@
 </head>
 
 <body>
-  <span id="msgs">MSG ORIGINAL</span>
-<h3>
-Compare two words distance (Damerau-Levenshtein)
-</h3>
-<button id="btnCompare">Compare</button><br>
-<input type="text" id="word1"><br>
-<input type="text" id="word2">
+<a href="#compare2WordsBox" id="navLinkCompare2">Comparar 2 palavras entre si</a>
+  <div id="compare2Words">
+    <span id="msgs">MSG ORIGINAL</span><a name="compare2WordsBox">
+    <h3>Compare two words distance (Damerau-Levenshtein)</h3>
+    <button id="btnCompare">Compare</button><br>
+    <input type="text" id="word1"><br>
+    <input type="text" id="word2">
+    <p>-------------------------------------------</p>  
+  </div>
 
-<p>-------------------------------------------</p>
 
 <h3>COMPARADOR DE PALAVRAS - Distância Damerau-Levenshtein (HTML, JSON, ou lista e texto)</h3>
 
@@ -36,18 +37,18 @@ Compare two words distance (Damerau-Levenshtein)
 
 <p>
 <select id ="tipoAnalise">
-  <option value="semRepOp">Sem repetição de operação</option>
   <option value="comRepOp">Com repetição de operação</option>
+  <option value="semRepOp">Sem repetição de operação</option>
 </select>
 <select id ="dataSource">
   <option value="preTeste_todosAlunos">Todos os alunos</option>
-  <option value="sondas_aluno-A">Aluno(a) A</option>
+  <option value="sondas_aluno-A" selected>Aluno(a) A</option>
 </select>
 <select id ="outputType">
   <option value="htmlTable">Tabela HTML</option>
   <option value="textList">Lista de texto</option>
   <option value="json">JSON</option>
-  <option value="csv">CSV</option>
+  <option value="csv" selected>CSV</option>
 </select>
 <button id="btnLoadJSON">Compare</button>
 </p>

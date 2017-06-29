@@ -1,9 +1,6 @@
 function TrataJSONtoArray (json, dataSource){
 	// dEPENDE DO jQUERY, POIS USA A FUNCAO $.each
 
-console.log("_________________________________")
-console.log("trataJSONtoArray() | Objeto JSON (raw): ", json)
-
 // VARIAVEIS BASICAS
 	var cabecalhosArray = Array();
 	var valoresArray = Array();
@@ -19,7 +16,10 @@ console.log("trataJSONtoArray() | Objeto JSON (raw): ", json)
 			// Corre os valores dentro do Array contido na intancia do Array pai
 			$.each(valorAtual, function(chave2, valorCampo){
                 if(chave == 0){
-                    cabecalhosArray.push(valorCampo);
+                	if($.isArray(valorCampo[0])){
+                		cabecalhosArray.push(valorCampo[0]);
+                	}
+                	cabecalhosArray.push(valorCampo);
                 } else {
                     valoresArray[chave].push(valorCampo);
                     // console.log("trataJSONtoArray() | ["+chave+"]["+chave2+"]: ", valorCampo);
@@ -58,6 +58,11 @@ console.log("trataJSONtoArray() | Objeto JSON (raw): ", json)
 		} // END - else{}
 
 	}); // END - $.each(json, function(chave, valorAtual)
+
+	console.log("_________________________________")
+	console.log("trataJSONtoArray() | Cabecalho: ", cabecalhosArray)
+	console.log("trataJSONtoArray() | Respostas: ", valoresArray)
+	console.log("_________________________________")
 
 	return [cabecalhosArray, valoresArray];
 

@@ -1,0 +1,583 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sai",
+				"saidaProPanel"
+			],
+			[
+				"said",
+				"saidaResultadoAnalise"
+			],
+			[
+				"valor",
+				"valorCampo"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"ti",
+				"tipoSaida"
+			],
+			[
+				"DISTANCIA",
+				"distanciaCalculada"
+			],
+			[
+				"aR",
+				"Array"
+			],
+			[
+				"tipo",
+				"tipoAnalise"
+			],
+			[
+				"cos",
+				"console"
+			],
+			[
+				"result",
+				"resultTemp"
+			],
+			[
+				"resu",
+				"resultTemp"
+			],
+			[
+				"pala",
+				"palavrasModelo"
+			],
+			[
+				"dist",
+				"distancia"
+			],
+			[
+				"in",
+				"indexCount2"
+			],
+			[
+				"pla",
+				"palavrasModelo"
+			],
+			[
+				"item",
+				"itemCount2"
+			],
+			[
+				"res",
+				"respostasAluno"
+			],
+			[
+				"index",
+				"index2"
+			],
+			[
+				"data",
+				"dataSource"
+			],
+			[
+				"json",
+				"json"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"word",
+				"WordDistanceHTML"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2928,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/base.js",
+			"settings":
+			{
+				"buffer_size": 13431,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Aluno (a) A;estrada;estrada;0\nAluno (a) A;cloro;coro;1\nAluno (a) A;pescador;pescador;0\nAluno (a) A;boliche;bolixe;2\nAluno (a) A;guitarra;quitara;2\nAluno (a) A;flautista;claltita;3\nAluno (a) A;laranja;larraja;2\nAluno (a) A;cegonha;segonha;1\nAluno (a) A;brinquedo;briquedo;1\nAluno (a) A;carroça;corosa;3\nAluno (a) A;atalho;atalho;0\nAluno (a) A;fogueira;fogueira;0\nAluno (a) A;terrinha;terinha;1\nAluno (a) A;equipe;equipe;0\nAluno (a) A;tamanho;tamanho;0\nAluno (a) A;cesta;setar;3\nAluno (a) A;geada;geada;0\nAluno (a) A;nogueira;nogueira;0\nAluno (a) A;cabeçalho;cabesanho;2\nAluno (a) A;breque;breque;0\nAluno (a) A;jaleco;jalico;1\nAluno (a) AB;ditado:;Aluno (a) AB;11\nAluno (a) AB;estrada;estrada ;1\nAluno (a) AB;cloro;coro;1\nAluno (a) AB;pescador;pescadus;2\nAluno (a) AB;boliche;boliche;0\nAluno (a) AB;guitarra;gitara;2\nAluno (a) AB;flautista;fautists;2\nAluno (a) AB;laranja;larãoxa;3\nAluno (a) AB;cegonha;cenha;2\nAluno (a) AB;brinquedo;briquedo;1\nAluno (a) AB;carroça;carroça;0\nAluno (a) AB;atalho;atalho;0\nAluno (a) AB;fogueira;fogeira;1\nAluno (a) AB;terrinha;terilha;2\nAluno (a) AB;equipe;equipe;0\nAluno (a) AB;tamanho;tamanho;0\nAluno (a) AB;cesta;seta;2\nAluno (a) AB;geada;geada;0\nAluno (a) AB;nogueira;nogeira;1\nAluno (a) AB;cabeçalho;cabesalho;1\nAluno (a) AB;breque;breque;0\nAluno (a) AB;jaleco;galecu;2\nAluno (a) AC;ditado:;Aluno (a) AC;11\nAluno (a) AC;estrada;stada;2\nAluno (a) AC;cloro;coro;1\nAluno (a) AC;pescador;pacado;3\nAluno (a) AC;boliche;bolixe;2\nAluno (a) AC;guitarra;citara;3\nAluno (a) AC;flautista;flatista;1\nAluno (a) AC;laranja;laramja;1\nAluno (a) AC;cegonha;segonha ;2\nAluno (a) AC;brinquedo;brigado;4\nAluno (a) AC;carroça;carosa;2\nAluno (a) AC;atalho;ataro;2\nAluno (a) AC;fogueira;fogora;3\nAluno (a) AC;terrinha;terinha;1\nAluno (a) AC;equipe;eccipe;2\nAluno (a) AC;tamanho;taminho;1\nAluno (a) AC;cesta;ceta;1\nAluno (a) AC;geada;geada;0\nAluno (a) AC;nogueira;mogora;4\nAluno (a) AC;cabeçalho;cabeblo;3\nAluno (a) AC;breque;breci;3\nAluno (a) AC;jaleco;-;6\nAluno (a) AL;ditado:;Aluno (a) AL;11\nAluno (a) AL;estrada;etada;2\nAluno (a) AL;cloro;colro;1\nAluno (a) AL;pescador;peado;3\nAluno (a) AL;boliche;bolice;1\nAluno (a) AL;guitarra;gitara;2\nAluno (a) AL;flautista;fetita;4\nAluno (a) AL;laranja;lariga;3\nAluno (a) AL;cegonha;serara;5\nAluno (a) AL;brinquedo;biqdo;4\nAluno (a) AL;carroça;carosa;2\nAluno (a) AL;atalho;atato;2\nAluno (a) AL;fogueira;foqra;4\nAluno (a) AL;terrinha;terira;3\nAluno (a) AL;equipe;brise;4\nAluno (a) AL;tamanho;tamorao;3\nAluno (a) AL;cesta;cta;2\nAluno (a) AL;geada;gada;1\nAluno (a) AL;nogueira;anora;5\nAluno (a) AL;cabeçalho;cabessaro;4\nAluno (a) AL;breque;bq;4\nAluno (a) AL;jaleco;galeco;1\nAluno (a) AV;ditado:;Aluno (a) AV;11\nAluno (a) AV;estrada;estrada;0\nAluno (a) AV;cloro;cloro;0\nAluno (a) AV;pescador;pescador;0\nAluno (a) AV;boliche;bolixe;2\nAluno (a) AV;guitarra;gitarra;1\nAluno (a) AV;flautista;flaltista;1\nAluno (a) AV;laranja;laraja;1\nAluno (a) AV;cegonha;segoia;3\nAluno (a) AV;brinquedo;briguedo;2\nAluno (a) AV;carroça;carroça;0\nAluno (a) AV;atalho;atalho;0\nAluno (a) AV;fogueira;fogeira;1\nAluno (a) AV;terrinha;terrinha;0\nAluno (a) AV;equipe;equipe;0\nAluno (a) AV;tamanho;tamanho;0\nAluno (a) AV;cesta;setas;3\nAluno (a) AV;geada;geada;0\nAluno (a) AV;nogueira;blogeira;3\nAluno (a) AV;cabeçalho;cabesalho;1\nAluno (a) AV;breque;bregi;3\nAluno (a) AV;jaleco;jaleco;0\nAluno (a) B;ditado:;Aluno (a) B;10\nAluno (a) B;estrada;Estrada;1\nAluno (a) B;cloro;Cloro;1\nAluno (a) B;pescador;pescador;0\nAluno (a) B;boliche;boliche;0\nAluno (a) B;guitarra;guitarra;0\nAluno (a) B;flautista;flaudista;1\nAluno (a) B;laranja;laranja;0\nAluno (a) B;cegonha;cegonha;0\nAluno (a) B;brinquedo;brinquedo;0\nAluno (a) B;carroça;carroça;0\nAluno (a) B;atalho;atalho;0\nAluno (a) B;fogueira;fogeira;1\nAluno (a) B;terrinha;terrinha;0\nAluno (a) B;equipe;equipe;0\nAluno (a) B;tamanho;tamanho;0\nAluno (a) B;cesta;sexta;2\nAluno (a) B;geada;geada;0\nAluno (a) B;nogueira;nogueira;0\nAluno (a) B;cabeçalho;cabeçalho;0\nAluno (a) B;breque;breque;0\nAluno (a) B;jaleco;jaleco;0\nAluno (a) C;ditado:;Aluno (a) C;10\nAluno (a) C;estrada;Estrada;1\nAluno (a) C;cloro;cmoro;1\nAluno (a) C;pescador;pescador;0\nAluno (a) C;boliche;bolixe;2\nAluno (a) C;guitarra;gitarra;1\nAluno (a) C;flautista;flautista;0\nAluno (a) C;laranja;laranga;1\nAluno (a) C;cegonha;cegolha;1\nAluno (a) C;brinquedo;briquedo;1\nAluno (a) C;carroça;carrosa;1\nAluno (a) C;atalho;atalho;0\nAluno (a) C;fogueira;fogeira;1\nAluno (a) C;terrinha;tererlha;3\nAluno (a) C;equipe;equipe;0\nAluno (a) C;tamanho;tamanlho;1\nAluno (a) C;cesta;cesta;0\nAluno (a) C;geada;geada;0\nAluno (a) C;nogueira;nogeira;1\nAluno (a) C;cabeçalho;cabesalho;1\nAluno (a) C;breque;beque;1\nAluno (a) C;jaleco;galeco;1\nAluno (a) CE;ditado:;Aluno (a) CE;11\nAluno (a) CE;estrada;serada;2\nAluno (a) CE;cloro;coro;1\nAluno (a) CE;pescador;pecato;3\nAluno (a) CE;boliche;polige;3\nAluno (a) CE;guitarra;gidara;3\nAluno (a) CE;flautista;fadida;5\nAluno (a) CE;laranja;lara;3\nAluno (a) CE;cegonha;cego;3\nAluno (a) CE;brinquedo;tiodo;6\nAluno (a) CE;carroça;carosa;2\nAluno (a) CE;atalho;atalo;1\nAluno (a) CE;fogueira;fogra;3\nAluno (a) CE;terrinha;teria;3\nAluno (a) CE;equipe;egige;3\nAluno (a) CE;tamanho;-;7\nAluno (a) CE;cesta;cgata;2\nAluno (a) CE;geada;;99\nAluno (a) CE;nogueira;nogra;3\nAluno (a) CE;cabeçalho;cabsaro;4\nAluno (a) CE;breque;beqe;2\nAluno (a) CE;jaleco;galeco;1\nAluno (a) DA;ditado:;Aluno (a) DA;11\nAluno (a) DA;estrada;Estrada;1\nAluno (a) DA;cloro;cloro;0\nAluno (a) DA;pescador;pescador;0\nAluno (a) DA;boliche;boliche;0\nAluno (a) DA;guitarra;guitarra;0\nAluno (a) DA;flautista;flautista;0\nAluno (a) DA;laranja;laranja;0\nAluno (a) DA;cegonha;cegonha;0\nAluno (a) DA;brinquedo;brinquedo;0\nAluno (a) DA;carroça;carroça;0\nAluno (a) DA;atalho;atalho;0\nAluno (a) DA;fogueira;fogueira;0\nAluno (a) DA;terrinha;terrinha;0\nAluno (a) DA;equipe;equipe;0\nAluno (a) DA;tamanho;tamanho;0\nAluno (a) DA;cesta;sexta;2\nAluno (a) DA;geada;cheada;2\nAluno (a) DA;nogueira;nogueira;0\nAluno (a) DA;cabeçalho;cabecalho;1\nAluno (a) DA;breque;breque;0\nAluno (a) DA;jaleco;jaleco;0\nAluno (a) DS;ditado:;Aluno (a) DS;11\nAluno (a) DS;estrada;estrada;0\nAluno (a) DS;cloro;cloro;0\nAluno (a) DS;pescador;pescador;0\nAluno (a) DS;boliche;boiche;1\nAluno (a) DS;guitarra;guitara;1\nAluno (a) DS;flautista;flautista;0\nAluno (a) DS;laranja;laranja;0\nAluno (a) DS;cegonha;cegonha;0\nAluno (a) DS;brinquedo;briquedo;1\nAluno (a) DS;carroça;quarrsa;4\nAluno (a) DS;atalho;atalho;0\nAluno (a) DS;fogueira;fogueira;0\nAluno (a) DS;terrinha;terrinha;0\nAluno (a) DS;equipe;equipe;0\nAluno (a) DS;tamanho;tamanho;0\nAluno (a) DS;cesta;sesta;1\nAluno (a) DS;geada;geada;0\nAluno (a) DS;nogueira;nogueira;0\nAluno (a) DS;cabeçalho;cabeçalho;0\nAluno (a) DS;breque;breque;0\nAluno (a) DS;jaleco;jaleco;0\nAluno (a) F;ditado:;Aluno (a) F;10\nAluno (a) F;estrada;Estrada;1\nAluno (a) F;cloro;cloro;0\nAluno (a) F;pescador;pescador;0\nAluno (a) F;boliche;bolixe;2\nAluno (a) F;guitarra;gitarra;1\nAluno (a) F;flautista;flautista;0\nAluno (a) F;laranja;laranga;1\nAluno (a) F;cegonha;segoia;3\nAluno (a) F;brinquedo;bricedo;3\nAluno (a) F;carroça;carrossa;2\nAluno (a) F;atalho;atalho;0\nAluno (a) F;fogueira;fogeira;1\nAluno (a) F;terrinha;perninha;2\nAluno (a) F;equipe;ecipe;2\nAluno (a) F;tamanho;tamanho;0\nAluno (a) F;cesta;sesta;1\nAluno (a) F;geada;geada;0\nAluno (a) F;nogueira;mogeira;2\nAluno (a) F;cabeçalho;cebessario;5\nAluno (a) F;breque;brece;2\nAluno (a) F;jaleco;chalecou;3\nAluno (a) G;ditado:;Aluno (a) G;10\nAluno (a) G;estrada;Estrada;1\nAluno (a) G;cloro;Cloro;1\nAluno (a) G;pescador;pescador;0\nAluno (a) G;boliche;bolixe;2\nAluno (a) G;guitarra;guitarra;0\nAluno (a) G;flautista;flautista;0\nAluno (a) G;laranja;laranja;0\nAluno (a) G;cegonha;cegonha;0\nAluno (a) G;brinquedo;brinquedo;0\nAluno (a) G;carroça;carroça;0\nAluno (a) G;atalho;atalho;0\nAluno (a) G;fogueira;fogueira;0\nAluno (a) G;terrinha;terrinha;0\nAluno (a) G;equipe;equipe;0\nAluno (a) G;tamanho;tamaho;1\nAluno (a) G;cesta;sexta;2\nAluno (a) G;geada;gueada;1\nAluno (a) G;nogueira;nogueira;0\nAluno (a) G;cabeçalho;cabeçario;2\nAluno (a) G;breque;breque;0\nAluno (a) G;jaleco;jaleco;0\nAluno (a) GC;ditado:;Aluno (a) GC;11\nAluno (a) GC;estrada;Estrada;1\nAluno (a) GC;cloro;rloro;1\nAluno (a) GC;pescador;pescador;0\nAluno (a) GC;boliche;boliche;0\nAluno (a) GC;guitarra;gitarra;1\nAluno (a) GC;flautista;flautista;0\nAluno (a) GC;laranja;laranja;0\nAluno (a) GC;cegonha;cegonha;0\nAluno (a) GC;brinquedo;brincedo;2\nAluno (a) GC;carroça;carrosa;1\nAluno (a) GC;atalho;atalho;0\nAluno (a) GC;fogueira;fogeira;1\nAluno (a) GC;terrinha;terinha;1\nAluno (a) GC;equipe;ecipe;2\nAluno (a) GC;tamanho;tamanho;0\nAluno (a) GC;cesta;sesta;1\nAluno (a) GC;geada;geada;0\nAluno (a) GC;nogueira;nogeira;1\nAluno (a) GC;cabeçalho;cabecalho;1\nAluno (a) GC;breque;brece;2\nAluno (a) GC;jaleco;galeco;1\nAluno (a) K;ditado:;Aluno (a) K;10\nAluno (a) K;estrada;esstrada;1\nAluno (a) K;cloro;cloro;0\nAluno (a) K;pescador;pescador;0\nAluno (a) K;boliche;boliche;0\nAluno (a) K;guitarra;guitara;1\nAluno (a) K;flautista;fautsta;2\nAluno (a) K;laranja;laranja;0\nAluno (a) K;cegonha;cegonha;0\nAluno (a) K;brinquedo;brinquedo;0\nAluno (a) K;carroça;carroça;0\nAluno (a) K;atalho;atalho;0\nAluno (a) K;fogueira;fogueira;0\nAluno (a) K;terrinha;terinha;1\nAluno (a) K;equipe;equipe;0\nAluno (a) K;tamanho;tamanho;0\nAluno (a) K;cesta;sesta;1\nAluno (a) K;geada;geada;0\nAluno (a) K;nogueira;Nogueira;1\nAluno (a) K;cabeçalho;cabesalho;1\nAluno (a) K;breque;breque;0\nAluno (a) K;jaleco;jaleco;0\nAluno (a) L;ditado:;Aluno (a) L;10\nAluno (a) L;estrada;estrada;0\nAluno (a) L;cloro;cloro;0\nAluno (a) L;pescador;pescador;0\nAluno (a) L;boliche;boliche;0\nAluno (a) L;guitarra;guitarra;0\nAluno (a) L;flautista;flaltista;1\nAluno (a) L;laranja;laranja;0\nAluno (a) L;cegonha;cegonha;0\nAluno (a) L;brinquedo;brinquedo;0\nAluno (a) L;carroça;carroça;0\nAluno (a) L;atalho;atalho;0\nAluno (a) L;fogueira;fogueira;0\nAluno (a) L;terrinha;terrinmnha;2\nAluno (a) L;equipe;equipe;0\nAluno (a) L;tamanho;tamanho;0\nAluno (a) L;cesta;cexta;1\nAluno (a) L;geada;geada;0\nAluno (a) L;nogueira;Nogueira;1\nAluno (a) L;cabeçalho;cabeçalho;0\nAluno (a) L;breque;breque;0\nAluno (a) L;jaleco;jaleco;0\nAluno (a) LJ;ditado:;Aluno (a) LJ;11\nAluno (a) LJ;estrada;;99\nAluno (a) LJ;cloro;;99\nAluno (a) LJ;pescador;;99\nAluno (a) LJ;boliche;;99\nAluno (a) LJ;guitarra;;99\nAluno (a) LJ;flautista;;99\nAluno (a) LJ;laranja;;99\nAluno (a) LJ;cegonha;;99\nAluno (a) LJ;brinquedo;;99\nAluno (a) LJ;carroça;;99\nAluno (a) LJ;atalho;;99\nAluno (a) LJ;fogueira;;99\nAluno (a) LJ;terrinha;;99\nAluno (a) LJ;equipe;;99\nAluno (a) LJ;tamanho;;99\nAluno (a) LJ;cesta;;99\nAluno (a) LJ;geada;;99\nAluno (a) LJ;nogueira;;99\nAluno (a) LJ;cabeçalho;;99\nAluno (a) LJ;breque;;99\nAluno (a) LJ;jaleco;;99\nAluno (a) N;ditado:;Aluno (a) N;10\nAluno (a) N;estrada;Estrada;1\nAluno (a) N;cloro;cloro;0\nAluno (a) N;pescador;pescador;0\nAluno (a) N;boliche;boliche;0\nAluno (a) N;guitarra;gitarra;1\nAluno (a) N;flautista;flautista;0\nAluno (a) N;laranja;laranja;0\nAluno (a) N;cegonha;cegonha;0\nAluno (a) N;brinquedo;brinquedo;0\nAluno (a) N;carroça;carroça;0\nAluno (a) N;atalho;atalho;0\nAluno (a) N;fogueira;fogueira;0\nAluno (a) N;terrinha;terrinha;0\nAluno (a) N;equipe;equipe;0\nAluno (a) N;tamanho;tamanho;0\nAluno (a) N;cesta;cesta;0\nAluno (a) N;geada;geada;0\nAluno (a) N;nogueira;nogueira;0\nAluno (a) N;cabeçalho;cabeçalho;0\nAluno (a) N;breque;breck;3\nAluno (a) N;jaleco;jaleco;0\nAluno (a) O;ditado:;Aluno (a) O;10\nAluno (a) O;estrada;;99\nAluno (a) O;cloro;;99\nAluno (a) O;pescador;;99\nAluno (a) O;boliche;;99\nAluno (a) O;guitarra;;99\nAluno (a) O;flautista;;99\nAluno (a) O;laranja;;99\nAluno (a) O;cegonha;;99\nAluno (a) O;brinquedo;;99\nAluno (a) O;carroça;;99\nAluno (a) O;atalho;;99\nAluno (a) O;fogueira;;99\nAluno (a) O;terrinha;;99\nAluno (a) O;equipe;;99\nAluno (a) O;tamanho;;99\nAluno (a) O;cesta;;99\nAluno (a) O;geada;;99\nAluno (a) O;nogueira;;99\nAluno (a) O;cabeçalho;;99\nAluno (a) O;breque;;99\nAluno (a) O;jaleco;;99\nAluno (a) ;PH;ditado:;Aluno (a) ;PH;12\nAluno (a) ;PH;estrada;serada;2\nAluno (a) ;PH;cloro;-;5\nAluno (a) ;PH;pescador;-;8\nAluno (a) ;PH;boliche;-;7\nAluno (a) ;PH;guitarra;-;8\nAluno (a) ;PH;flautista;-;9\nAluno (a) ;PH;laranja;-;7\nAluno (a) ;PH;cegonha;-;7\nAluno (a) ;PH;brinquedo;-;9\nAluno (a) ;PH;carroça;carroça;0\nAluno (a) ;PH;atalho;atalho;0\nAluno (a) ;PH;fogueira;fegra;4\nAluno (a) ;PH;terrinha;terra;3\nAluno (a) ;PH;equipe;egige;3\nAluno (a) ;PH;tamanho;tamlo;3\nAluno (a) ;PH;cesta;conta;2\nAluno (a) ;PH;geada;nogra;4\nAluno (a) ;PH;nogueira;cadsaro;7\nAluno (a) ;PH;cabeçalho;;99\nAluno (a) ;PH;breque;;99\nAluno (a) ;PH;jaleco;;99\nAluno (a) W;ditado:;Aluno (a) W;10\nAluno (a) W;estrada;estrada;0\nAluno (a) W;cloro;gloro;1\nAluno (a) W;pescador;pescador;0\nAluno (a) W;boliche;boliche;0\nAluno (a) W;guitarra;gitarra;1\nAluno (a) W;flautista;flaltista;1\nAluno (a) W;laranja;lagranga;2\nAluno (a) W;cegonha;segon;3\nAluno (a) W;brinquedo;brinquedo;0\nAluno (a) W;carroça;carroça;0\nAluno (a) W;atalho;atalho;0\nAluno (a) W;fogueira;fogeira;1\nAluno (a) W;terrinha;terrinha;0\nAluno (a) W;equipe;equipe;0\nAluno (a) W;tamanho;tamanho;0\nAluno (a) W;cesta;sesta;1\nAluno (a) W;geada;jeada;1\nAluno (a) W;nogueira;nogeira;1\nAluno (a) W;cabeçalho;cabesalho;1\nAluno (a) W;breque;breque;0\nAluno (a) W;jaleco;jaleco;0",
+			"settings":
+			{
+				"buffer_size": 13063,
+				"line_ending": "Windows",
+				"name": "Aluno (a) A;estrada;estrada;0"
+			}
+		},
+		{
+			"file": "js/DiferencaEntrePalavras.js",
+			"settings":
+			{
+				"buffer_size": 1387,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/defineParametrosAnalise.js",
+			"settings":
+			{
+				"buffer_size": 1009,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/trataDados.js",
+			"settings":
+			{
+				"buffer_size": 2396,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 89.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/U/dev/apps/howSimilar05/howSimilar2.sublime-project",
+		"/U/dev/apps/howSimilar05/js/DiferencaEntrePalavras",
+		"/U/dev/apps/howSimilar05/data/sondas_aluno-A.json",
+		"/U/_ ORIENTAÇÕES/TCCs/2017 - Juliana Neves (Pedagogia)/Dados/UFAL, TCC - Juliana Neves (2017) - Sondas (Aluno A).csv",
+		"/U/dev/apps/howSimilar05/js/defineParametrosAnalise.js",
+		"/U/dev/apps/howSimilar05/data/preTeste_todosAlunos.json",
+		"/U/dev/apps/howSimilar05/js/defineParametrosAnalise",
+		"/U/dev/apps/howSimilar/js/damerau-levenshtein.js",
+		"/U/dev/apps/howSimilar/index.html",
+		"/U/dev/apps/howSimilar/js/base2.js",
+		"/U/dev/apps/howSimilar/data/sondas_aluno-A",
+		"/U/dev/apps/howSimilar/css/jquery.jspanel.css",
+		"/U/dev/apps/howSimilar/js/float-panel/float-panel.js",
+		"/U/dev/apps/compareWords/index.php",
+		"/U/dev/apps/howSimilar/libs/funcoes.php",
+		"/U/dev/apps/howSimilar/header.php",
+		"/U/dev/apps/howSimilar/js/dl_distance_exe.js",
+		"/U/dev/apps/compareWords/CHANGELOG.txt",
+		"/U/dev/apps/compareWords/js/base.js",
+		"/U/dev/apps/compareWords/levenshtein.php",
+		"/U/dev/apps/compareWords/header.php",
+		"/U/dev/apps/compareWords/libs/funcoes.php",
+		"/U/dev/bin/php/php.ini",
+		"/U/dev/apps/compareWords/lib/funcoes.php",
+		"/U/dev/apps/compareWords/footer.php",
+		"/U/dev/apps/compareWords/css/principal.css",
+		"/U/dev/apps/compareWords/manifest.json",
+		"/U/dev/apps/compareWords/css/principal.php",
+		"/U/dev/apps/compareWords/compareWords.sublime-workspace",
+		"/U/dev/apps/compareWords/compareWords.sublime-project",
+		"/U/dev/apps/compareWords/lib/funcoes",
+		"/U/dev/bin/php/php.ini-development",
+		"/U/dev/bin/php/php.ini-production",
+		"/C/dev/apps/AutismRegM/src/app/app.html",
+		"/C/dev/apps/AutismRegM/src/components/lista-bd/lista-bd.html",
+		"/C/dev/apps/AutismRegM/src/components/lista-bd/lista-bd.ts",
+		"/C/dev/apps/AutismRegM/src/pages/home/home.html",
+		"/C/dev/apps/AutismRegM/src/pages/home/home.ts",
+		"/C/dev/apps/AutismRegM/src/pages/cliente-novo/cliente-novo.ts",
+		"/C/dev/apps/AutismRegM/src/app/app.component.ts",
+		"/C/dev/apps/AutismRegM/src/app/app.module.ts",
+		"/C/dev/apps/AutismRegM/src/pages/cliente-novo/cliente-novo.html",
+		"/C/dev/apps/AutismRegM/src/components/lista-bd/lista-bd.module.ts",
+		"/C/dev/apps/AutismRegM/src/index.html",
+		"/C/dev/apps/mySuperApp/src/pages/list-master/list-master.ts",
+		"/C/dev/apps/mySuperApp/src/pages/list-master/list-master.html",
+		"/C/dev/apps/autismReg/src/pages/list-programs/list-program.html",
+		"/C/dev/apps/autismReg/www/index.html",
+		"/C/dev/apps/autismReg/src/pages/pages.ts",
+		"/C/dev/apps/autismReg/src/app/app.module.ts",
+		"/C/dev/apps/autismReg/src/app/app.component.ts",
+		"/C/dev/apps/autismReg/src/pages/list-programs/list-program.ts",
+		"/C/dev/apps/autismReg/src/pages/list-programs/list-program.scss",
+		"/C/dev/apps/autismReg/src/pages/list-master/README.md",
+		"/C/dev/apps/autismReg/ionic.config.json",
+		"/U/_ UFAL - Projetos Pesquisa/autismreg/index.html",
+		"/U/_ UFAL - Projetos Pesquisa/autismreg/dados_pacientes.js",
+		"/U/UFAL - Disciplinas/Desenvolvimento e Aprendizagem/Aulas/Aula 10 - Psicologia Genética (Piaget), Parte 02/Piaget (1964) Development and learning - ANOTAÇÔES",
+		"/U/UFAL - Disciplinas/Desenvolvimento e Aprendizagem/Aulas/Skinner/UFAL, CEDU - Evolução e Aprendizagem -- Skinner (Marques, 2016-2).txt",
+		"/C/Apps/xampp/webdav/siepsi2/topo.php",
+		"/L/Docência/FAMAM/Alfabetização e Letramento/Bibliografia/Reflexões sobre Alfabetização - Emilia Ferreiro (TV CCP - YouTube).srt",
+		"/C/Apps/EasyPHP1-8/www/siepsi2/cadastra_questoes.php",
+		"/C/Apps/xampp/webdav/siepsi2/ajax/login_request.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"panel",
+			"dataSource",
+			"tipoAnalise",
+			"respostasDados",
+			"saidaProPanel",
+			"dataProbe",
+			"outputType",
+			"respostasAluno",
+			"palavrasModelo",
+			"objWordsToCompare",
+			"trata",
+			"tipoAnalise",
+			"objWordsToCompare",
+			"respostasAluno",
+			"palavrasModelo",
+			"include_path=",
+			"C:\\WINDOWS",
+			"path",
+			"ListMasterPage",
+			"list-master"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"JSONdataSource",
+			"saidaResult",
+			"respostasDados",
+			"cabecalhoDados",
+			"arrayWordsToCompare",
+			"respostasDado",
+			"cabecalhosDado",
+			"ListProgramPage",
+			"list-program"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1643,
+								1629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4394,
+								4394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1280.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13063,
+								13063
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Aluno (a) A;estrada;estrada;0",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/DiferencaEntrePalavras.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								979,
+								979
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/defineParametrosAnalise.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								630,
+								656
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/trataDados.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								706,
+								706
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 80.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "howSimilar05.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
