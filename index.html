@@ -3,16 +3,13 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
 
-  <script type="text/javascript" src="js/jquery.js"></script>
-   <script type="text/javascript" src="js/jsPanel/jquery.jspanel-compiled.js"></script>
-  <script type="text/javascript" src="js/damerau-levenshtein.js"></script>
-  <script type="text/javascript" src="js/defineParametrosAnalise.js"></script>
-  <script type="text/javascript" src="js/trataDados.js"></script>
-  <script type="text/javascript" src="js/DiferencaEntrePalavras.js"></script>
-  <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="libs/jquery.js"></script>
+<!--     <script type="text/javascript" src="js/damerau-levenshtein.js"></script>
+    <script type="text/javascript" src="js/dl_distance_exe.js"></script> -->
+    <script type="text/javascript" src="js/base.js"></script>
+
   
-  <link rel="stylesheet" type="text/css" href="css/result-light.css">
-  <link rel="stylesheet" type="text/css" href="js/jsPanel/jquery.jspanel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/result-light.css">
 
   <title>WordDistanceMeter</title>
 
@@ -28,48 +25,15 @@ Compare two words distance (Damerau-Levenshtein)
 <input type="text" id="word1"><br>
 <input type="text" id="word2">
 
-<p>-------------------------------------------</p>
+-------------------------------------------
 
-<h3>COMPARADOR DE PALAVRAS - Distância Damerau-Levenshtein (HTML, JSON, ou lista e texto)</h3>
+<h3>WORDS TO COMPARE (JSON)</h3>
+<button id="btnLoadJSON">Compare</button><br />
+<p><span id="wordsDistances"><h4>Diferença entre as Palavras</h4></span></p>
 
-<p><span id="wordsDistances"><h4>Escolha o formato do resultado (output)</h4></span></p>
+<p><span id="wordsDistancesTbl"></span></p>
 
-<p>
-<select id ="tipoAnalise">
-  <option value="semRepOp">Sem repetição de operação</option>
-  <option value="comRepOp">Com repetição de operação</option>
-</select>
-<select id ="dataSource">
-  <option value="preTeste_todosAlunos">Todos os alunos</option>
-  <option value="sondas_aluno-A">Aluno(a) A</option>
-</select>
-<select id ="outputType">
-  <option value="htmlTable">Tabela HTML</option>
-  <option value="textList">Lista de texto</option>
-  <option value="json">JSON</option>
-  <option value="csv">CSV</option>
-</select>
-<button id="btnLoadJSON">Compare</button>
-</p>
-
-  <!--// ------------- FORMATOS DE SAIDA DO RESULTADO ------------- //-->
-  <div id="resultadosTextareas">
-  <h3>Resultado em CSV (texto separado por pontoevirgula)</h3>
-  <textarea id="resultCSV"></textarea><br />
-
-  <h3>Resultado em Código HTML (formato de tabela)</h3>
-  <textarea id="resultHTMLTabela"></textarea><br />
-
-  <h3>Resultado em JSON (formato de Objeto Javascript)</h3>
-  <textarea id="resultDadosJSON"></textarea><br />
-
-
-  <h3>Resultado em Lista Comparativa por Palavra (texto)</h3>
-  <textarea id="wordsDistancesTbltTextarea"></textarea><br />
-
-  <p><span id="wordsDistancesTbl"></span></p>
-  </div>
-  <!--// ------------- FIM - FORMATOS DE SAIDA DO RESULTADO ------------- //-->
+<textarea id="resultDados"></textarea><br />
   
   <script>
   // tell the embed parent frame the height of the content

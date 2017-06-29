@@ -1,107 +1,107 @@
+function DamerauLevenshtein (prices, damerau) {
+    // 'prices' customisation of the edit costs by passing an
+    // object with optional 'insert', 'remove', 'substitute', and
+    // 'transpose' keys, corresponding to either a constant
+    // number, or a function that returns the cost. The default
+    // cost for each operation is 1. The price functions take
+    // relevant character(s) as arguments, should return numbers,
+    // and have the following form:
+    //
+    // insert: function (inserted) { return NUMBER; }
+    //
+    // remove: function (removed) { return NUMBER; }
+    //
+    // substitute: function (from, to) { return NUMBER; }
+    //
+    // transpose: function (backward, forward) { return NUMBER; }
+    //
+    // The damerau flag allows us to turn off transposition and
+    // only do plain Levenshtein distance.
 
+    if (damerau !== false) damerau = true;
+    if (!prices) prices = {};
+    var insert, remove, substitute, transpose;
 
-function distance(source, target) {
+    switch (typeof prices.insert) {
+    case 'function': insert = prices.insert; break;
+    case 'number': insert = function (c) { return prices.insert; }; break;
+    default: insert = function (c) { return 1; }; break; }
 
-/**
- * Calculates the Damerau-Levenshtein distance between two strings.
- * Source: https://gist.github.com/IceCreamYou/8396172
- */
+    switch (typeof prices.remove) {
+    case 'function': remove = prices.remove; break;
+    case 'number': remove = function (c) { return prices.remove; }; break;
+    default: remove = function (c) { return 1; }; break; }
 
-    if (!source) return target ? target.length : 0;
-    else if (!target) return source.length;
+    switch (typeof prices.substitute) {
+    case 'function': substitute = prices.substitute; break;
+    case 'number':
+        substitute = function (from, to) { return prices.substitute; };
+        break;
+    default: substitute = function (from, to) { return 1; }; break; }
 
-    var m = source.length, n = target.length, INF = m+n, score = new Array(m+2), sd = {};
-    for (var i = 0; i < m+2; i++) score[i] = new Array(n+2);
-    score[0][0] = INF;
-    for (var i = 0; i <= m; i++) {
-        score[i+1][1] = i;
-        score[i+1][0] = INF;
-        sd[source[i]] = 0;
-    }
-    for (var j = 0; j <= n; j++) {
-        score[1][j+1] = j;
-        score[0][j+1] = INF;
-        sd[target[j]] = 0;
-    }
+    switch (typeof prices.transpose) {
+    case 'function': transpose = prices.transpose; break;
+    case 'number':
+        transpose = function (backward, forward) { return prices.transpose; };
+        break;
+    default: transpose = function (backward, forward) { return 1; }; break; }
 
-    for (var i = 1; i <= m; i++) {
-        var DB = 0;
-        for (var j = 1; j <= n; j++) {
-            var i1 = sd[target[j-1]],
-                j1 = DB;
-            if (source[i-1] === target[j-1]) {
-                score[i+1][j+1] = score[i][j];
-                DB = j;
-            }
-            else {
-                score[i+1][j+1] = Math.min(score[i][j], Math.min(score[i+1][j], score[i][j+1])) + 1;
-            }
-            score[i+1][j+1] = Math.min(score[i+1][j+1], score[i1] ? score[i1][j1] + (i-i1-1) + 1 + (j-j1-1) : Infinity);
-        }
-        sd[source[i-1]] = i;
-    }
-    return score[m+1][n+1];
+    function distance(down, across) {
+        // http://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance
+        var ds = [];
+        if ( down === across ) {
+            return 0;
+        } else {
+            down = down.split(''); down.unshift(null);
+            across = across.split(''); across.unshift(null);
+            down.forEach(function (d, i) {
+                if (!ds[i]) ds[i] = [];
+                across.forEach(function (a, j) {
+                    if (i === 0 && j === 0) ds[i][j] = 0;
+                    // Empty down (i == 0) -> across[1..j] by inserting
+                    else if (i === 0) ds[i][j] = ds[i][j-1] + insert(a);
+                    // Down -> empty across (j == 0) by deleting
+                    else if (j === 0) ds[i][j] = ds[i-1][j] + remove(d);
+                    else {
+                        // Find the least costly operation that turns
+                        // the prefix down[1..i] into the prefix
+                        // across[1..j] using already calculated costs
+                        // for getting to shorter matches.
+                        ds[i][j] = Math.min(
+                            // Cost of editing down[1..i-1] to
+                            // across[1..j] plus cost of deleting
+                            // down[i] to get to down[1..i-1].
+                            ds[i-1][j] + remove(d),
+                            // Cost of editing down[1..i] to
+                            // across[1..j-1] plus cost of inserting
+                            // across[j] to get to across[1..j].
+                            ds[i][j-1] + insert(a),
+                            // Cost of editing down[1..i-1] to
+                            // across[1..j-1] plus cost of
+                            // substituting down[i] (d) with across[j]
+                            // (a) to get to across[1..j].
+                            ds[i-1][j-1] + (d === a ? 0 : substitute(d, a))
+                        );
+                        // Can we match the last two letters of down
+                        // with across by transposing them? Cost of
+                        // getting from down[i-2] to across[j-2] plus
+                        // cost of moving down[i-1] forward and
+                        // down[i] backward to match across[j-1..j].
+                        if (damerau
+                            && i > 1 && j > 1
+                            && down[i-1] === a && d === across[j-1]) {
+                            ds[i][j] = Math.min(
+                                ds[i][j],
+                                ds[i-2][j-2] + (d === a ? 0 : transpose(d, down[i-1]))
+                            );
+                        };
+                    };
+                });
+            });
+            return ds[down.length-1][across.length-1];
+        };
+    };
+    return distance;
+};
 
-    console.log(source + ' <==> ' + target, score)
-} // END - distance(source, target)
-
-function damerauLevenshteinDistance(s, t) {
-/**
- * Determine the Damerau-Levenshtein distance between s and t.
- * Source: https://github.com/mailcheck/mailcheck/wiki/String-Distance-Algorithms
- */    
-  // 
-  if (!s || !t) {
-    return 99;
-  }
-  var m = s.length;
-  var n = t.length;      
-  var charDictionary = new Object();
-  
-  /* For all i and j, d[i][j] holds the Damerau-Levenshtein distance
-   * between the first i characters of s and the first j characters of t.
-   * Note that the array has (m+1)x(n+1) values.
-   */
-  var d = new Array();
-  for (var i = 0; i <= m; i++) {
-    d[i] = new Array();
-    d[i][0] = i;
-  }
-  for (var j = 0; j <= n; j++) {
-    d[0][j] = j;
-  }
-  
-  // Populate a dictionary with the alphabet of the two strings
-  for (var i = 0; i < m; i++) {
-    charDictionary[s.charAt(i)] = 0;
-  }
-  for (var j = 0; j < n; j++) {
-    charDictionary[t.charAt(j)] = 0;
-  }
-  
-  // Determine substring distances
-  for (var i = 1; i <= m; i++) {
-    var db = 0;
-    for (var j = 1; j <= n; j++) {
-      var i1 = charDictionary[t.charAt(j-1)];
-      var j1 = db;
-      var cost = 0;
-      
-      if (s.charAt(i-1) == t.charAt(j-1)) { // Subtract one to start at strings' index zero instead of index one
-        db = j;
-      } else {
-        cost = 1;
-      }
-      d[i][j] = Math.min(d[i][j-1] + 1,                 // insertion
-                         Math.min(d[i-1][j] + 1,        // deletion
-                                  d[i-1][j-1] + cost)); // substitution
-      if(i1 > 0 && j1 > 0) {
-        d[i][j] = Math.min(d[i][j], d[i1-1][j1-1] + (i-i1-1) + (j-j1-1) + 1); //transposition
-      }
-    }
-    charDictionary[s.charAt(i-1)] = i;
-  }
-        
-  // Return the strings' distance
-  return d[m][n];
-} // END - damerauLevenshteinDistance(s, t)
+module.exports = DamerauLevenshtein;
